@@ -1,0 +1,932 @@
+*{
+	font-family: 'Lora', serif;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background: #424242;
+	color: white;
+}
+
+
+/* ======================================================= CADASTRO E LOGIN ======================================================= */
+
+#logo-img {
+  background: url('../imagens/logo_oficial.png') no-repeat;
+  width: 250px;
+  height: 200px;
+  margin-left: 120px;
+  margin-bottom: 50px;
+}
+
+
+
+/* ======================================================= TELA INICIAL =======================================================*/ 
+.box-site{
+	width: 500px;
+	height: 500px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #1b1b1b;
+	text-align: center;
+}
+
+.box-site input[type="button"]{
+	border: 0;
+	font-size: 1.2em;
+	background: none;
+	display: block;
+	text-align: center;
+	width: 300px;
+	margin: 50px auto;
+	border: 3px solid #3498db;
+	padding: 15px 20px;
+	outline: none;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+
+
+
+/* ======================================================= LOGIN =======================================================*/
+.box-login{
+	width: 500px;
+	height: 500px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #1b1b1b;
+	text-align: center;
+}
+
+.box-login h1{
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 100px;
+
+}
+
+.box-login input[type="text"], .box-login input[type="password"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 10px;
+	width: 300px;
+	outline: none;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+.box-login input[type="text"]:focus, .box-login input[type="password"]:focus{
+	width: 350px;
+	border-color: #2ecc71;	
+}
+
+.box-login input[type="submit"], .box-login input[type="button"]{
+	border: 0;
+	background: none;
+	text-align: center;
+	width: 100px;
+	margin: 15px auto;
+	border: 2px solid #2ecc71;
+	padding: 15px 10px;
+	outline: none;
+	font-size: 1.1em;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+
+.box-login input[type="submit"]:hover, .box-login input[type="button"]:hover, .box-cadastro input[type="submit"]:hover{
+	background: #2ecc71;
+}
+
+.input-container-login{
+	border-radius: 24px;
+	background: none;
+	outline: none;
+	text-align: center;
+	margin: 10px auto;
+	display: flex;
+	transform: translate(5%,0);;
+	align-items: center;
+}
+.input-container-login input{
+	width: 280px;
+	border: 0px;
+	border-radius: 24px;
+	outline: none;
+	background: none;
+	padding: 10px 10px;
+}
+
+
+
+/* ======================================================= CADASTRO =======================================================*/
+.box-cadastro{	
+	width: 500px;
+	height: 800px;
+	padding: 40px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-38%);
+	background: #1b1b1b;
+
+}
+
+.input-container{
+	border-radius: 24px;
+	background: none;
+	outline: none;
+	width: 60%;
+	text-align: center;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	border: 3px solid black;
+}
+.input-container input{
+	border: 0px;
+	border-radius: 24px;
+	outline: none;
+	background: none;
+	width: 250px;
+	padding: 10px 10px;
+}
+
+i{
+	margin: 0 10px;
+	color:  #aaa;
+}
+
+.cadastro-nomes{
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 5px;
+}
+.campo{
+	background: none;
+	outline: none;
+	width: 250px;
+	border-radius: 24px;
+	border: 3px solid black;
+	padding: 10px 10px;
+}
+
+.box-cadastro input[type="submit"], .box-cadastro input[type="reset"], .box-cadastro input[type="button"]{
+	border: 0;
+	background: none;
+	text-align: center;
+	width: 100px;
+	margin: 20px auto;
+	margin-right: 20px;
+	padding: 14px 20px;
+	outline: none;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.box-cadastro input[type="submit"]{
+		border: 2px solid #2ecc71;
+}
+.box-cadastro input[type="reset"]{
+	border: 2px solid #b71c1c;
+}
+
+.box-cadastro input[type="reset"]:hover{
+	background: #b71c1c;
+}
+
+.box-cadastro input[type="button"], .box-login input[type="button"]{
+		border: 2px solid #004ecb;
+}
+.box-cadastro input[type="button"]:hover, .box-login input[type="button"]:hover{
+	background: #004ecb;
+}
+
+.campo-gen{
+	text-align: left;
+	width: 20px;
+
+}
+
+.box-mensagem{
+	width: 50%;
+	text-align: center;
+	transform: translate(50%, 190px);
+	font-weight: bolder;
+	font-family: sans-serif;
+	color: white;
+	font-size: 1.2em;
+}
+
+div.msg-sucesso{
+	text-align: center;
+	font-weight: bolder;
+	font-family: sans-serif;
+	width: 500px;
+	height: 25px;
+	margin: 10px auto;
+	background-color: rgba(53, 255, 20, .3);
+	border: 1px solid rgb(107, 255, 20);
+}
+
+div.msg-erro{
+	text-align: center;
+	font-weight: bolder;
+	font-family: sans-serif;
+	width: 500px;
+	height: 25px;
+	margin: 10px auto;
+	background-color: rgba(255, 48, 52, .3);
+	border: 1px solid rgb(255, 30, 32);
+}
+
+
+/* =================================================== MENU DO SITE =================================================== */
+
+/* =================================================== CABEÇALHO ===================================================*/
+header{
+border-bottom: 2px solid #2b32ba;
+height: 51px;
+background-color:#1b1b1b ;
+padding: 5px;
+}
+
+#cabecalho{
+	position: relative;
+	color: white;
+	font-size: 1.8em;
+	margin: 10px;
+	left: 40%;
+	outline: none;
+}
+
+.usuario i.perfil{
+	position: absolute;
+	left: 95%;
+	top: 12px;
+	font-size: 2em;
+}
+
+nav{
+	height: 100%;
+	width: 0;
+	background-color: #1b1b1b;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	overflow: hidden;
+	transition: width ;
+	outline: none;
+	transition: 0.5s;
+}
+
+nav a{
+	outline: none;
+	color: white;
+	font-size: 0.85em;
+	display: block;
+	padding: 9px 40px;
+}
+
+nav a:hover{
+	outline: none;
+	background: #2ecc71;
+	width: 100%;
+	color: white;
+	border: 2px solid rgb(107, 255, 20);
+}
+
+/* ======================================================= MENU PRINCIPAL ======================================================== */
+main{
+	transition: margin-Right 0.5s;
+}
+
+div.box-menu{
+	position: relative;
+	border-radius: 20px;
+	box-sizing: border-box;
+	margin: 5px 5px;
+	background-color: #1b1b1b;
+	height: 250px;
+	transform: translate(50%,65%);
+	overflow: hidden;
+}
+
+.boxes{
+	border: 2px solid #2b32ba;
+}
+
+.boxes h3{
+	color: white;
+	font-size: 1.5em;
+}
+
+.boxes:hover{
+	border: 2px solid #51bf1b;
+}
+
+.boxes i.icons{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-60%, -40%);
+	font-size: 10rem;
+	transition: 0.5s ease-in-out;
+}
+
+.boxes:hover i.icons{
+	font-size: 3rem;
+	transform: translate(50px, 80px);
+}
+
+div .conteudo{
+	color: white;
+	font-size: 0.9em;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: -100%;
+	transition: 0.5s ease-in-out;
+	padding: 80px 20px;
+}
+
+.boxes .conteudo::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: #99999922;
+}
+
+.boxes:hover .conteudo{
+	transform: translateX(100%);
+}
+
+/* ================================================= CARTEIRA DIGITAL ================================================*/ 
+
+#nome_opcao{
+	font-size: 2em;
+	position: relative;
+	left: 40%;
+	top: -40px;
+}
+
+#cabecalho_carteira{
+	color: white;
+	font-size: 1.6em;
+	margin: 9px;
+	outline: none;
+}
+
+#nome_opcao_cerrado{
+	font-size: 2em;
+	position: relative;
+	color: white;
+	outline: none;
+	left: 35%;
+	top: -40px;
+	cursor: pointer;
+}
+
+#nome_opcao_cerrado:focus, #nome_opcao_cerrado:hover{
+	outline: none;
+}
+
+
+#cabecalho_cerrado, #cabecalho_perfil{
+	color: white;
+	font-size: 1.8em;
+	margin: 9px;
+	outline: none;
+}
+
+
+/* ============================================== DIAGRAMA DO CERRADO ============================================================*/
+
+#box_perguntas{
+	position: relative;
+	height: 500px;
+	width: 80%;
+	background-color: #1b1b1b;
+	transform: translate(100px, 80px);
+	margin-bottom: 25px;
+}
+
+#box_perguntas p{
+	font-size: 1.3em;
+	font-weight: bolder;
+}
+
+.valor_diagrama{
+	position: relative;
+	top: 110px;
+	text-align: center;
+}
+
+.money_diagrama{
+	position: relative;
+	top: 195px;
+	text-align: center;
+}
+
+#box_perguntas input[type="money"], #box_perguntas input[type="text"] {
+	border: 0;
+	position: absolute;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 10px;
+	width: 200px;
+	left: 36%;
+	outline: none;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+#box_perguntas input[type="money"]{
+	top: 120px;
+}
+
+#box_perguntas input[type="text"]{
+	top: 260px;
+}
+
+#box_perguntas input[type="money"]:focus, #box_perguntas input[type="text"]:focus{
+	border-color: #2ecc71;	
+}
+
+#box_perguntas input[type="button"]{
+	border: 0;
+	font-size: 1.1em;
+	background: none;
+	display: block;
+	text-align: center;
+	width: 100px;
+	margin: 50px auto;
+	border: 3px solid #3498db;
+	padding: 10px 20px;
+	position: absolute;
+	top: 350px;
+	left: 42%;
+	outline: none;
+	border-radius: 24px;
+	
+	cursor: pointer;
+}
+
+#box_perguntas input[type="button"]:hover{
+	background-color: rgba(53, 255, 20, .3);
+	transition: 0.25s;
+}
+
+#botao_info{
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.dicas_sites{
+	margin-left: 10px;
+	display: none;
+}
+#lista_info{
+	position: relative;
+	outline: none;
+	color: transparent;
+	left: -10px;
+}
+
+.nomes_infos{
+	position: absolute;
+	left: 20px;
+	outline: none;
+}
+.nomes_infos:hover{
+	outline: transparent;
+	color: #12bf1b;
+
+}
+.nomes_infos_fechar{
+	position: absolute;
+	left: 20px;	
+	outline: none;
+}
+.nomes_infos_fechar:hover{
+		position: absolute;
+	outline: transparent;
+	color: #bf301a;
+
+}
+
+
+/* =========================================== QUESTOES DIAGRAMA =================================================== */
+
+#progress-bar{
+	position: absolute;
+	top: -10px;
+	left: 0px;
+	height: 10px;
+	width: 6.6667%;
+	background-color: #42bf0e;
+	transition: all 100ms ease-in-out;
+}
+
+#perguntas_cerrado{
+	position: relative;
+	height: 500px;
+	width: 60%;
+	background-color: #1b1b1b;
+	transform: translate(35%, 20%);
+	margin: auto;
+}
+
+.questoes_cerrado{
+	font-size: 1.1em;
+	width: 60%;
+	position: absolute;
+	background-color: #1b1b1b;
+	left: 20%;
+	top: 32%;
+}
+
+.nomes_perguntas{
+	text-align: left;
+	font-weight: bolder;
+}
+
+#questao-1 input, #questao-2 input, #questao-3 input, #questao-4 input, #questao-5 input, #questao-6 input, #questao-7 input, #questao-8 input, #questao-9 input, #questao-10 input, #questao-11 input, #questao-12 input, #questao-13 input, #questao-14 input, #questao-15 input{
+	margin-right: 10px;
+}
+
+#submit-1, #submit-2, #submit-3, #submit-4, #submit-5, #submit-6, #submit-7, #submit-8, #submit-9, #submit-10, #submit-11, #submit-12, #submit-13, #submit-14, #submit-15{
+	 text-align: center;
+	 margin-top: 10px;
+}
+
+#questao-2, #questao-3, #questao-4, #questao-5, #questao-6, #questao-7, #questao-8, #questao-9, #questao-10, #questao-11, #questao-12, #questao-13, #questao-14, #questao-15, #questao-16{
+	display: none;
+}
+
+.button{
+  margin: 10px 0 0 0;
+  float: right;
+  cursor: pointer;
+
+  font-size: 0.9em;
+  border: none;
+  padding: 10px 15px;
+  line-height: 18px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  vertical-align: baseline;
+  background: #075da8;
+  color: white;
+  text-decoration: none !important;
+  display: inline-block;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: background-color 200ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.button:hover {
+  background-color: #059fdb !important;
+  color: white;
+}
+
+
+#botao_voltar{
+	position: absolute;
+	top: 150px;
+	left: 35%;
+	border: none;
+  padding: 10px 15px;
+  line-height: 18px;
+  border-radius: 3px;
+  vertical-align: baseline;
+  background: #075da8;
+  color: white;
+  text-decoration: none !important;
+  display: inline-block;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: background-color 200ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+#botao_voltar:hover{
+	background-color: #7066f3 !important;
+}
+
+.opcoes{
+	width: 20px;
+	height: 15px;
+	margin: 10px auto;
+}
+
+/* ==================================================== CARTEIRA DIGITAL ==================================================== */
+
+
+#carteira{
+    z-index:1;
+	position: relative;
+	height: 500px;
+	background-color: #1b1b1b;
+	transform: translate(10%, 20%);
+	margin: auto;
+}
+
+#carteira2{
+    z-index:1;
+	position: relative;
+	height: 500px;
+	background-color: #1b1b1b;
+	transform: translate(10%, 20%);
+	margin: auto;
+}
+
+.tabela-carteira {
+	background-color: #819694;
+	width: 95%;
+	margin: 15px auto;
+    overflow: scroll;
+}
+
+.tabela-carteira tr {
+	line-height: 30px;
+}
+
+.tabela-carteira tr.titulo {
+	font-weight: bolder;
+	background-color: #000000;
+	color: whitesmoke;
+}
+
+.tabela-carteira td {
+	padding: 5px 5px;
+	line-height: 30px;
+}
+
+.tabela-carteira td i {
+	outline: transparent;
+	height: 100%;
+	color: white;
+	margin: 0;
+}
+
+.tabela-carteira td.nomes_titulos {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.tabela-carteira td.acao_coluna {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.tabela-carteira td.acao_botao{
+	/*width: 20px;*/
+    height: 20px;
+    width: 240px;
+	transform: translate(20px, 0px);
+}
+
+.revelar-item {
+	overflow: hidden;
+	display: block;
+	width: 0;
+	transition: width;
+	transition: 0.5s;
+}
+a.block_sumiu1:hover{
+    background-color: #1565c0;
+    outline: transparent;
+}
+a.block_sumiu2:hover{
+	background-color: #c62828;
+	outline: transparent;
+}
+
+.botao_icone {
+	outline: none;
+	transition: 0.5s;
+}
+
+.botao_icone.ativo {
+	transform: rotate(-180deg);
+}
+
+#adiciona_acao, #edita_acao{
+    position: relative;
+	height: 500px;
+	background-color: #1b1b1b;
+	transform: translate(50%, 20%);
+    width: 50%;
+	margin: auto;
+    transition:.5s;
+}
+
+.formulario_cadastro_acao{
+    text-align: center; 
+    font-size: 1.2em;
+    border: 1px solid rgba(129, 68, 243, 0.76); 
+    height: 100%;
+}
+
+.dados_nova_acao{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 10px 10px;
+	width: 300px;
+	outline: none;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+.dados_nova_acao_submit {      
+    color:whitesmoke;
+    font-size: 1.1em
+    border: 0;
+	background: none;
+	text-align: center;
+	width: 150px;
+	margin: 15px auto;
+	border: 2px solid #2ecc71;
+	padding: 15px 10px;
+	outline: none;
+	font-size: 1.1em;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+    left:250px; 
+}
+
+.dados_nova_acao_submit:hover{
+    background-color:rgba(51, 255, 20, 0.795) ;
+}
+.fomulario_cadastro_acao h2{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+
+.botao_fechar{
+    position:absolute;
+ top:25px;
+    right:25px;
+}
+
+
+/* ============================================ ALTERAR PERFIL ==========================================*/
+
+
+#perfil{
+	position: relative;
+	height: 500px;
+	width: 60%;
+	background-color: #1b1b1b;
+	transform: translate(35%, 20%);
+	margin: auto;
+}
+
+#nome_perfil{
+ 	font-size: 2em;
+	position: relative;
+	left: 47%;
+	top: -45px;
+ }
+
+ #sua_conta{
+ 	padding: 20px auto;
+ }
+
+ #sub_informacoes{
+ 	font-size: .8em;
+ 	margin-left: 10px;
+ 	margin-top: -8px;
+ 	opacity: .6;
+ }
+
+#email{
+	position: absolute;
+	top:25%;
+	left: 25px;
+	width: 80%;
+}
+
+ #email_place{
+ 	color: black;
+ 	width: 100%;
+ 	font-size: 1em;
+ 	opacity: .8;
+ }
+
+ #nome_sobrenome{
+ 	position: absolute;
+ 	left: 25px;
+	width: 100%;
+	top: 50%;
+ }
+
+ .nome_sobrenome_span{
+ 	margin-right: 34%;
+ }
+
+ .botao_nome_sobrenome{
+ 	margin-right: 116px;
+ 	width: 200px;
+ 	color: black;
+ 	font-size: 1em;
+ 	opacity: .8;
+ }
+
+
+ .senha{
+ 	position: absolute;
+ 	left: 25px;
+	width: 90%;
+	top: 70%;
+ }
+
+#senha_visao{
+	font-size: 1.5em;
+	transform: translate(0,5px);
+}
+
+.botao_senha{
+	color: black;
+	 	opacity: .8;
+}
+
+.dica_senha{
+	color: whitesmoke;
+	transform: translate(0,8px);
+	font-size: .6em;
+	opacity: .6;
+
+}
+
+#botao_alterar{
+	position: absolute;
+	top: 76.6%;
+	right: 16%;
+	border: 0;
+	background: none;
+	border-radius: 24px;
+	height: 30px;
+	text-align: center;
+	border: 1px solid  #3498db;
+} 
+
+#botao_alterar:hover{
+	background: #2ecc71;
+}
+
+
+/* ========================================== FOOTERS ================================================= */
+
+.footer_pag{
+	background-color: black;
+	width: 100%;
+	border-top: 2px solid #2b32ba;
+	height: 30px;
+	transform: translate(0px,380px);
+}
+
+.footer_pag_menu{
+	background-color: black;
+	width: 100%;
+	border-top: 2px solid #2b32ba;
+	height: 30px;
+	transform: translate(0px,500px);
+}
+
+
+
+
